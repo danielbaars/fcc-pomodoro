@@ -1,0 +1,31 @@
+extends _default
+
+block head
+	- var pageTitle = 'FCC Build a Pomodoro Clock'
+	- var metaDescription = "A Pomodoro Clock built as part of Free Code Camp's 'Advanced Front End Development Projects', using Pug, Sass and Bootstrap 4."	
+	- var companyName = 'Free Code Camp'
+	- var bodyClass = 'pomodoro-timer'
+	- var googleFonts = 'Overpass+Mono:600'
+	- var jsFile = 'index.js'
+	- var online = true
+	- var mathJS = false
+	- var momentJS = true
+	- var fontAwesome = false
+
+block content
+	.pomodoro.paused.work#jsPomodoro
+		.pomodoro__header Pomodoro Clock
+		.pomodoro__plus-minus.clearfix
+			.pomodoro__break.plus-minus
+				.header Break Length
+				button.btn--minus#jsBreakMinus -
+				.number#jsBreakLength
+				button.btn--plus#jsBreakPlus +			
+			.pomodoro__length.plus-minus
+				.header Session Length
+				button.btn--minus#jsSessionMinus -
+				.number#jsSessionLength
+				button.btn--plus#jsSessionPlus +
+		.pomodoro__clock
+			.pomodoro__clockheader#jsClockStatus About to work
+			.pomodoro__clockcontent#jsClock

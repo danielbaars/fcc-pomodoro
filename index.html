@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="A Pomodoro Clock built as part of Free Code Camp's 'Advanced Front End Development Projects', using Pug, Sass and Bootstrap 4.">
+    <meta name="author" content="Free Code Camp">
+    <meta name="robots" content="noindex, nofollow">
+    <title>FCC Build a Pomodoro Clock</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass+Mono:600">
+    <link rel="stylesheet prefetch" href="style.css">
+  </head>
+  <body class="pomodoro-timer">
+    <div class="pomodoro paused work" id="jsPomodoro">
+      <div class="pomodoro__header">Pomodoro Clock</div>
+      <div class="pomodoro__plus-minus clearfix">
+        <div class="pomodoro__break plus-minus">
+          <div class="header">Break Length</div>
+          <button class="btn--minus" id="jsBreakMinus">-</button>
+          <div class="number" id="jsBreakLength"></div>
+          <button class="btn--plus" id="jsBreakPlus">+			</button>
+        </div>
+        <div class="pomodoro__length plus-minus">
+          <div class="header">Session Length</div>
+          <button class="btn--minus" id="jsSessionMinus">-</button>
+          <div class="number" id="jsSessionLength"></div>
+          <button class="btn--plus" id="jsSessionPlus">+</button>
+        </div>
+      </div>
+      <div class="pomodoro__clock">
+        <div class="pomodoro__clockheader" id="jsClockStatus">About to work</div>
+        <div class="pomodoro__clockcontent" id="jsClock"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js" type="text/javascript"></script>
+    <script src="moment-timer.js" type="text/javascript"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

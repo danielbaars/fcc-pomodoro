@@ -76,6 +76,17 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/screenshot.png": {
+		"ft": 32768,
+		"iS": 20383,
+		"oA": 0,
+		"oAP": "\/screenshot.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"\/style.css": {
 		"aP": 1,
 		"bl": 0,
